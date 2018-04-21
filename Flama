@@ -1,0 +1,19 @@
+const int flama = 9;
+ 
+ void setup()
+{
+   Serial.begin(9600);
+   pinMode(flama, INPUT);
+}
+ 
+void loop()
+{
+   int humedad = digitalRead(flama);
+ 
+     if (humedad == HIGH)
+   {
+      Serial.println("Detección");   
+    
+   }
+   delay(500);
+}
